@@ -56,7 +56,7 @@ object calcAll extends App{
       else (b,0)
     }
   }
-  // 無限的NPE fuuuuuuuuuuuu
+  // 無限的NPE fuuuuuuuuuuuu  // ok not my fault, or, it's my fault, but the code here is good
   kwCount.filter(_._2!=0).groupBy(_._1).map(s => (s._1, s._2.size)).map(_.swap).sortByKey().coalesce(1).saveAsTextFile("/user/cloudera/qq1")
   //kwCount.filter(_._2!=0).groupBy(_._1).map(s => (s._1, s._2.size)).map(_.swap).foreach(println)// .saveAsTextFile("/kw_count_spark/qq1")
 

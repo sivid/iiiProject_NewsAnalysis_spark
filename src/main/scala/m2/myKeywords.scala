@@ -47,6 +47,7 @@ object myKeywords{
     // 中山醫學大學 -> 8, 國賠 -> 7, 工地 -> 4, 民雄車禍 -> 6, 緊急避孕藥 -> 5, 車險 -> 3, 集美 -> 1, 預防針 -> 9, ﻿萬海 -> 0)
     // println("We have " + kwSortedMap.size + " keywords")
 
+    // this is no longer accurate, but it's what I originally wanted to do
     /*
     我要先做出一個array, 裡面放著這個keyword遇到其他keyword的次數
     然後再把這個array轉成sparse vector

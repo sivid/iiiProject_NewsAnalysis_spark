@@ -19,6 +19,9 @@ import java.io.ObjectOutputStream
  * Created by sivid on 10/24/14.
  * whole lot of credits goes to
  * http://chimpler.wordpress.com/2014/06/11/classifiying-documents-using-naive-bayes-on-apache-spark-mllib/
+ * I tried to at least rewrite this program,
+ * alas, skill and time limitations were too much to overcome.
+ * In the end, the only code I could call my own was the chinese tokenization method.
 spark-submit --class newsClassification.newsClassification thematrix_2.10-1.0.jar
  */
 class Dictionary(dict: Seq[String]) extends Serializable{
